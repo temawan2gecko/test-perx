@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  line-height: 1;
+}
+
+.logo {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.8;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.cart:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+}
+
+.badge :global(.ant-badge-count) {
+  font-size: 12px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  line-height: 20px;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+    height: 56px;
+  }
+  
+  .logo {
+    font-size: 16px;
+  }
+  
+  .icon {
+    font-size: 18px;
+  }
+  
+  .badge :global(.ant-badge-count) {
+    font-size: 10px;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+}
