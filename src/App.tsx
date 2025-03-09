@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
-import { HashRouter  as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter  as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header/Header";
 import { ProductsPage } from "./pages/ProductsPage";
 import { CartPage } from "./pages/CartPage";
