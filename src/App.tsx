@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter  as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header/Header";
 import { ProductsPage } from "./pages/ProductsPage";
 import { CartPage } from "./pages/CartPage";
@@ -19,7 +19,7 @@ const App: React.FC<AppProps> = ({ config }) => {
       <Layout.Content>
         <Routes>
           <Route
-            path="/test-perx"
+            path="/"
             element={<ProductsPage dealers={config?.dealers} />}
           />
           <Route path="/cart" element={<CartPage />} />
