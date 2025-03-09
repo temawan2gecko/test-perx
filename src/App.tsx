@@ -19,7 +19,7 @@ const App: React.FC<AppProps> = ({ config }) => {
       <Layout.Content>
         <Routes>
           <Route
-            path="/perx-test"
+            path="/"
             element={<ProductsPage dealers={config?.dealers} />}
           />
           <Route path="/cart" element={<CartPage />} />
