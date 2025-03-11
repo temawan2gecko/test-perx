@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
 
   return (
     <Layout.Header className={styles.header}>
-      <Link to="/" className={styles.logo}>
+      <Link to="/test-perx/" className={styles.logo}>
         Perx Store
       </Link>
 
